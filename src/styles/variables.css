@@ -1,0 +1,16 @@
+:root{
+  --bg-primary:#050816;
+  --bg-secondary:#0F172A;
+
+  --primary:#8B5CF6;
+  --secondary:#38BDF8;
+
+  --success:#22C55E;
+  --warning:#F59E0B;
+  --danger:#EF4444;
+
+  --text-primary:#FFFFFF;
+  --text-secondary:#94A3B8;
+
+  --glass:rgba(255,255,255,.05);
+}
