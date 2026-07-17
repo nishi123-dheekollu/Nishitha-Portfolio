@@ -4,7 +4,7 @@ function AboutCTA() {
   return (
     <div className="mt-14 flex flex-wrap gap-4">
       <a
-        href="/c:\Users\Manisha\Downloads\Nishitha_Dheekollu_Resume.docx"
+        href="https://drive.google.com/file/d/1Mm5DehKghhiTPgWLgAeGPEIuVF_qX99P/view?usp=sharing"
         download
         className="
           flex items-center gap-2

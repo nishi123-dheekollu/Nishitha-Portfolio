@@ -2,7 +2,7 @@ Nishitha Dheekollu — Portfolio
 
 A personal portfolio website with an immersive space theme — featuring a 3D animated Earth intro, a mouse-reactive floating satellite scene, and smooth page-to-page navigation.
 
-Live Demo: [Add your deployed link here]
+Live Demo:  https://nishitha-portfolio-mu.vercel.app/
 
 
 ✨ Features
