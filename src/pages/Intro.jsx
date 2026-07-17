@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 
-import IntroText from "../components/introduction/IntroText";
-import StarsBackground from "../components/introduction/StarsBackground";
-import Earth from "../components/introduction/Earth";
-import Clouds from "../components/introduction/Clouds";
-import SatelliteRing from "../components/introduction/SatelliteRing";
-import CameraAnimation from "../components/introduction/CameraAnimation";
-import FadeTransition from "../components/introduction/FadeTransition";
+import IntroText from "../components/Introduction/IntroText";
+import StarsBackground from "../components/Introduction/StarsBackground";
+import Earth from "../components/Introduction/Earth";
+import Clouds from "../components/Introduction/Clouds";
+import SatelliteRing from "../components/Introduction/SatelliteRing";
+import CameraAnimation from "../components/Introduction/CameraAnimation";
+import FadeTransition from "../components/Introduction/FadeTransition";
 
 function Intro({ onComplete }) {
   const [showIntroText, setShowIntroText] = useState(true);
