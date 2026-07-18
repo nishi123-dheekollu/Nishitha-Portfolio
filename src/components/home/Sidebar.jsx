@@ -151,7 +151,7 @@ function Sidebar() {
         </nav>
 
         {/* Social */}
-        <div className="mt-auto md:mt-0 flex justify-center gap-3 pb-6 md:pb-0">
+        <div className="mt-10 md:mt-0 flex justify-center gap-3 md:pb-0">
           <a
             href="https://www.linkedin.com/in/nishitha-dheekollu"
             target="_blank"
