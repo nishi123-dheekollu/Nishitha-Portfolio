@@ -4,7 +4,7 @@ function AboutCTA() {
   return (
     <div className="mt-8 sm:mt-10 md:mt-14 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
       <a
-        href="https://drive.google.com/file/d/1Mm5DehKghhiTPgWLgAeGPEIuVF_qX99P/view?usp=sharing"
+        href="/resume.pdf"
         target="_blank"
         rel="noreferrer"
         className="
