@@ -3,7 +3,7 @@ import CertificatesHero from "../components/certificates/CertificatesHero";
 
 function Certificates() {
   return (
-    <div className="w-screen h-screen bg-black flex overflow-hidden">
+    <div className="w-screen h-screen h-[100dvh] bg-black flex overflow-hidden">
 
       <Sidebar />
 

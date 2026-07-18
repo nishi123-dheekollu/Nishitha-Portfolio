@@ -11,8 +11,20 @@ import FadeTransition from "../components/Introduction/FadeTransition";
 
 function Intro({ onComplete }) {
   const [showIntroText, setShowIntroText] = useState(true);
-
   const [showFade, setShowFade] = useState(false);
+
+  // Wider FOV on narrow (mobile/portrait) screens so the Earth isn't
+  // cropped or too small — recalculated once on mount and on resize.
+  const [fov, setFov] = useState(45);
+
+  useEffect(() => {
+    const updateFov = () => {
+      setFov(window.innerWidth < 768 ? 65 : 45);
+    };
+    updateFov();
+    window.addEventListener("resize", updateFov);
+    return () => window.removeEventListener("resize", updateFov);
+  }, []);
 
   // Intro Text -> Earth Scene
   useEffect(() => {
@@ -51,7 +63,7 @@ function Intro({ onComplete }) {
 
           <Canvas
             className="absolute inset-0"
-            camera={{ position: [0, 0, 8], fov: 45 }}
+            camera={{ position: [0, 0, 8], fov }}
           >
             <ambientLight intensity={0.08} />
 

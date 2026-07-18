@@ -39,53 +39,53 @@ function ContactHero() {
   }, [status]);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-24 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-center px-6 py-16 sm:px-10 md:px-16 lg:px-24 md:py-20 overflow-hidden">
 
       {/* Ambient glow blobs */}
-      <div className="absolute top-10 -left-20 w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-10 right-0 w-[450px] h-[450px] bg-indigo-500/10 rounded-full blur-[130px] pointer-events-none"></div>
+      <div className="absolute top-10 -left-20 w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-cyan-500/10 rounded-full blur-[100px] md:blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-10 right-0 w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-indigo-500/10 rounded-full blur-[110px] md:blur-[130px] pointer-events-none"></div>
 
-      <div className="relative w-full max-w-6xl mx-auto grid grid-cols-2 gap-20 items-start">
+      <div className="relative w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start">
 
         {/* Left: Info */}
-        <div>
-          <p className="uppercase tracking-[0.45em] text-cyan-300 text-sm">
+        <div className="order-1">
+          <p className="uppercase tracking-[0.3em] sm:tracking-[0.45em] text-cyan-300 text-xs sm:text-sm">
             Get In Touch
           </p>
 
-          <h2 className="text-white text-6xl font-black mt-5">
+          <h2 className="text-white text-4xl sm:text-5xl md:text-6xl font-black mt-4 sm:mt-5">
             Let's Build
             <br />
             Something
           </h2>
 
-          <p className="mt-6 text-slate-400 text-lg max-w-md">
+          <p className="mt-4 sm:mt-6 text-slate-400 text-base sm:text-lg max-w-md">
             Have a role, project, or idea in mind? I'd love to hear
             from you — drop a message and I'll get back to you soon.
           </p>
 
-          <div className="flex gap-4 mt-10">
+          <div className="hidden md:flex gap-3 sm:gap-4 mt-8 sm:mt-10">
             <a
               href="mailto:nishithadheekollu111@gmail.com"
-              className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
             >
-              <HiMail size={20} />
+              <HiMail size={18} className="sm:w-5 sm:h-5" />
             </a>
             <a
               href="https://www.linkedin.com/in/nishitha-dheekollu"
               target="_blank"
               rel="noreferrer"
-              className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
             >
-              <FaLinkedin size={18} />
+              <FaLinkedin size={16} className="sm:w-[18px] sm:h-[18px]" />
             </a>
             <a
               href="https://github.com/nishi123-dheekollu"
               target="_blank"
               rel="noreferrer"
-              className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
             >
-              <FaGithub size={18} />
+              <FaGithub size={16} className="sm:w-[18px] sm:h-[18px]" />
             </a>
           </div>
         </div>
@@ -93,7 +93,7 @@ function ContactHero() {
         {/* Right: Form */}
         <form
           onSubmit={handleSubmit}
-          className="rounded-2xl bg-white/5 border border-white/10 p-8 space-y-5"
+          className="order-2 w-full rounded-2xl bg-white/5 border border-white/10 p-5 sm:p-6 md:p-8 space-y-4 sm:space-y-5"
         >
           <div>
             <label className="text-slate-400 text-xs uppercase tracking-wider mb-2 flex items-center gap-2">
@@ -105,7 +105,7 @@ function ContactHero() {
               value={form.name}
               onChange={handleChange}
               required
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 outline-none focus:border-cyan-400/40 transition-all"
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 sm:py-3 text-white placeholder-slate-500 outline-none focus:border-cyan-400/40 transition-all text-sm sm:text-base"
               placeholder="Your name"
             />
           </div>
@@ -120,7 +120,7 @@ function ContactHero() {
               value={form.email}
               onChange={handleChange}
               required
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 outline-none focus:border-cyan-400/40 transition-all"
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 sm:py-3 text-white placeholder-slate-500 outline-none focus:border-cyan-400/40 transition-all text-sm sm:text-base"
               placeholder="you@example.com"
             />
           </div>
@@ -135,7 +135,7 @@ function ContactHero() {
               onChange={handleChange}
               required
               rows={5}
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 outline-none focus:border-cyan-400/40 transition-all resize-none"
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 sm:py-3 text-white placeholder-slate-500 outline-none focus:border-cyan-400/40 transition-all resize-none text-sm sm:text-base"
               placeholder="Tell me about the opportunity or idea..."
             />
           </div>
@@ -144,9 +144,9 @@ function ContactHero() {
             type="submit"
             disabled={status === "sending"}
             className="
-              w-full px-8 py-4 rounded-xl
+              w-full px-6 py-3 sm:px-8 sm:py-4 rounded-xl
               bg-cyan-400/15 text-cyan-300 border border-cyan-400/30
-              uppercase tracking-[0.15em] text-sm font-medium
+              uppercase tracking-[0.12em] sm:tracking-[0.15em] text-xs sm:text-sm font-medium
               hover:bg-cyan-400/25 hover:shadow-[0_0_35px_rgba(34,211,238,.35)]
               transition-all duration-300
               disabled:opacity-50 disabled:cursor-not-allowed
@@ -166,6 +166,37 @@ function ContactHero() {
             </p>
           )}
         </form>
+
+        {/* Mobile-only: social icons shown after the form, as an alternative way to reach out */}
+        <div className="order-3 md:hidden">
+          <p className="text-slate-500 text-xs uppercase tracking-wider mb-3 text-center">
+            Or reach out directly
+          </p>
+          <div className="flex justify-center gap-3">
+            <a
+              href="mailto:nishithadheekollu111@gmail.com"
+              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
+            >
+              <HiMail size={18} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nishitha-dheekollu"
+              target="_blank"
+              rel="noreferrer"
+              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
+            >
+              <FaLinkedin size={16} />
+            </a>
+            <a
+              href="https://github.com/nishi123-dheekollu"
+              target="_blank"
+              rel="noreferrer"
+              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-cyan-400/40 hover:text-cyan-300 transition-all duration-300"
+            >
+              <FaGithub size={16} />
+            </a>
+          </div>
+        </div>
 
       </div>
 

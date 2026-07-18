@@ -3,7 +3,7 @@ import HeroContent from "../components/home/HeroContent";
 
 function Home() {
   return (
-    <div className="w-screen h-screen bg-black flex overflow-hidden">
+    <div className="w-screen h-screen h-[100dvh] bg-black flex overflow-hidden">
 
       {/* Sidebar */}
       <Sidebar />

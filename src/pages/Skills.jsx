@@ -3,7 +3,7 @@ import SkillsHero from "../components/skills/SkillsHero";
 
 function SkillsPage() {
   return (
-    <div className="w-screen h-screen bg-black flex overflow-hidden">
+    <div className="w-screen h-screen h-[100dvh] bg-black flex overflow-hidden">
 
       <Sidebar />
 
