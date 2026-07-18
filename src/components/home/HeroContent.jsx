@@ -68,7 +68,11 @@ function HeroContent() {
           z-10
           h-full
           flex
-          items-center
+          items-start
+          md:items-center
+          pt-32
+          sm:pt-36
+          md:pt-0
           px-6
           sm:px-10
           md:pl-16 md:pr-16

@@ -53,7 +53,10 @@ function Sidebar() {
           fixed md:relative inset-y-0 left-0 z-50
           w-[220px] md:w-[155px] h-screen
           border-r border-white/10 bg-black/90 md:bg-black/20 backdrop-blur-xl
-          flex flex-col justify-evenly px-3
+          flex flex-col justify-start md:justify-evenly
+          pt-20 md:pt-0
+          gap-10 md:gap-0
+          px-3
           transform transition-transform duration-300 ease-in-out
           ${open ? "translate-x-0" : "-translate-x-full"}
           md:translate-x-0
@@ -119,6 +122,13 @@ function Sidebar() {
             </span>
           </NavLink>
 
+          <button className={inactiveClass}>
+            <span className={itemInner}>
+              <HiBriefcase size={18} />
+              <span>Experience</span>
+            </span>
+          </button>
+
           <NavLink
             to="/certificates"
             className={({ isActive }) => (isActive ? activeClass : inactiveClass)}
@@ -141,7 +151,7 @@ function Sidebar() {
         </nav>
 
         {/* Social */}
-        <div className="flex justify-center gap-3">
+        <div className="mt-auto md:mt-0 flex justify-center gap-3 pb-6 md:pb-0">
           <a
             href="https://www.linkedin.com/in/nishitha-dheekollu"
             target="_blank"
