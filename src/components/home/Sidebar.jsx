@@ -122,13 +122,6 @@ function Sidebar() {
             </span>
           </NavLink>
 
-          <button className={inactiveClass}>
-            <span className={itemInner}>
-              <HiBriefcase size={18} />
-              <span>Experience</span>
-            </span>
-          </button>
-
           <NavLink
             to="/certificates"
             className={({ isActive }) => (isActive ? activeClass : inactiveClass)}
